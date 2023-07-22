@@ -11,17 +11,35 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
         thead, tfoot{
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
         .num{
             text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
         }
     </style>
 </head>
@@ -38,10 +56,11 @@
                 tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -156,10 +175,17 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nihil officia eligendi. Necessitatibus aliquid cupiditate ad nobis maiores qui ipsam sapiente vero cum magnam exercitationem, labore sit quidem adipisci quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officia, dolor architecto voluptatum eligendi fuga tempore inventore, perspiciatis, minima commodi cupiditate placeat. Unde corporis porro itaque maiores velit quo! Soluta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi repellat necessitatibus, ipsum, aspernatur temporibus at aperiam dolorem quisquam repudiandae repellendus dolore esse recusandae consequuntur, laboriosam debitis beatae provident ea. Dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae placeat mollitia, deleniti modi quasi perferendis obcaecati dolorem natus fugit ex consequuntur atque, vitae necessitatibus dignissimos laboriosam enim blanditiis ipsam porro.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nihil officia eligendi. Necessitatibus aliquid cupiditate ad nobis maiores qui ipsam sapiente vero cum magnam exercitationem, labore sit quidem adipisci quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officia, dolor architecto voluptatum eligendi fuga tempore inventore, perspiciatis, minima commodi cupiditate placeat. Unde corporis porro itaque maiores velit quo! Soluta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi repellat necessitatibus, ipsum, aspernatur temporibus at aperiam dolorem quisquam repudiandae repellendus dolore esse recusandae consequuntur, laboriosam debitis beatae provident ea. Dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae placeat mollitia, deleniti modi quasi perferendis obcaecati dolorem natus fugit ex consequuntur atque, vitae necessitatibus dignissimos laboriosam enim blanditiis ipsam porro.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nihil officia eligendi. Necessitatibus aliquid cupiditate ad nobis maiores qui ipsam sapiente vero cum magnam exercitationem, labore sit quidem adipisci quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officia, dolor architecto voluptatum eligendi fuga tempore inventore, perspiciatis, minima commodi cupiditate placeat. Unde corporis porro itaque maiores velit quo! Soluta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi repellat necessitatibus, ipsum, aspernatur temporibus at aperiam dolorem quisquam repudiandae repellendus dolore esse recusandae consequuntur, laboriosam debitis beatae provident ea. Dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae placeat mollitia, deleniti modi quasi perferendis obcaecati dolorem natus fugit ex consequuntur atque, vitae necessitatibus dignissimos laboriosam enim blanditiis ipsam porro.</p>
+
+    
 </body>
 </html>
