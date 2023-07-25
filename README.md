@@ -7,4 +7,4 @@ Estou aprendendo a criar site e agora vou gerenciar meus repositórios! <br>
 <a href="https://madelinealmeida09.github.io/html5-css3/modulo3/ex22/fundo06.html" target="_blank">Teste de background-image</a>
 <br>
 <a href="https://madelinealmeida09.github.io/html5-css3/modulo3/desafio12/des12.html" target="_blank">Projeto Cordel</a>
-<a href="https://madelinealmeida09.github.io/html5-css3/modulo4/projeto-social" target="_blank">Projeto Social</a>
+<a href="https://madelinealmeida09.github.io/html5-css3/modulo4/projeto-social/index.html" target="_blank">Projeto Social</a>
