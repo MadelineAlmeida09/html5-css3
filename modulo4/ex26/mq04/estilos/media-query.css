@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/*Todas as demais midias*/
+
+/*Typical device breakpoint 2023
+/* Extra small devices (phones, 600px and down)
+Small devices (portrait tablets and large phones, 600px and up):max-widht:768px
+Medium devices (landscape tablets, 768px and up):max-width: 992px
+Large devices (laptops/desktops, 992px and up):max-width:1200
+Extra large devices (large laptops and desktops, 1200px and up)
+*/
+
+/*Impressora*/
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+       
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg);/*Desnecesário*/
+    }
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main::after{
+        content:'Essa impressão foi feita através do site www.cursoemvideo.com' ;
+        text-decoration: overline;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    #phone{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #print{
+        display:block;
+    }
+    #pc{
+        display: none;
+    }
+    #tv{
+        display: none;
+    }
+}
+
+/*Medium devices*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone{
+        display:none;
+    }
+    #tablet{
+        display: block;
+    }
+    #print{
+        display: none;
+    }
+    #pc{
+        display: none;
+    }
+    #tv{
+        display: none;
+    }
+}
+
+/*Large device*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+    #pc{
+        display: block;
+    }
+    #tv{
+        display: none;
+    }
+}
+
+/*Extra large device*/
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+    #pc{
+        display: none;
+    }
+    #tv{
+        display: block;
+    }
+    main{
+        width: 70px;
+    }    
+}
