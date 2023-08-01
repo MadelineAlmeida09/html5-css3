@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*Typical device breakpoint 2023
+/* Extra small devices (phones, 600px and down)
+Small devices (portrait tablets and large phones, 600px and up):max-widht:768px
+Medium devices (landscape tablets, 768px and up):max-width: 992px
+Large devices (laptops/desktops, 992px and up):max-width:1200
+Extra large devices (large laptops and desktops, 1200px and up)
+*/
+
+@media screen and (min-width: 768px){
+    #burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
+    main{
+        width: 768px;
+    }
+}
+    
