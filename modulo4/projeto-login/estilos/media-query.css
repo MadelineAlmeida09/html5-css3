@@ -14,6 +14,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     }
     #login{
         width: 90vw;
+        height: 280px;
     }
     #login > #imagem{
         float: left;
@@ -31,6 +32,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     }
     #login{
         width: 950px;
+        height: 350px;
     }
     #login > #imagem{
        float: right;
@@ -45,6 +47,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
         font-size: 2em;
     }
     #form > p{
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 10px 0px;
     }
 }
