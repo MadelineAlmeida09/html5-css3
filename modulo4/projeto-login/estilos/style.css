@@ -64,13 +64,14 @@ form > .campo{
     height: 40px;
     border-radius: 8px;
     margin: 5px 0px;
+    border: 2px solid #5f2c82;
 }
 .campo > label{
     display: none;
 }
 .campo > span{
  color: white;
- background-color: black;
+ 
  font-size: 2em;
  width: 40px;
  padding: 5px;   
@@ -78,12 +79,11 @@ form > .campo{
 .campo > input{
     background-color: #60c4c0;
     font-size: 1em;
-    height: 100%;
+    width: calc(100% - 40px);
+    border-radius: 4px;
     border: 0px;
-    border-radius: 8px;
-    padding: 4px;
-    width: calc(100%-44px);
-    transform: translateY(-10px);
+    height: 100%;
+    transform: translate(40px, -118%);
 }
 form > input[type=submit]{
     display: block;
